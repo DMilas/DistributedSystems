@@ -1,11 +1,12 @@
 package com.distributedsystems;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public interface Broker extends Node{
     //variables declaration
-    List<Consumer> registeredUsers;
-    List<Publisher> registeredPublishers;
+    List<Consumer> registeredUsers = new ArrayList<Consumer>();
+    List<Publisher> registeredPublishers = new ArrayList<Publisher>();
 
     //methods declaration
     void calculateKeys();
